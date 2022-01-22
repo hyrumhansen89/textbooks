@@ -1,0 +1,19 @@
+{
+  "name": "hyrum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+        "build": "node app.js",
+        "test": "standard"
+ },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  
+  "engines": {
+  "node": "12.x"
+}
+}

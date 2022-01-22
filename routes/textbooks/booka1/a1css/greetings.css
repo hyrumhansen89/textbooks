@@ -1,0 +1,76 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+#tab-container {
+    display:flex;
+}
+
+.tablinks {
+    height:45px;
+    flex:1;
+    border:none;
+    text-align:center;
+    font-size:20px;
+    
+}
+
+.active {
+    background-color:#808080;   
+}
+
+span {
+    height:45px;
+    font-size:25px;
+    background:#45f248;
+    border:1px solid #FFFFFF;
+    box-shadow:1px 1px #2db83d;
+    border-radius:5px;
+    color:#FFFFFF;
+    padding-left:5px;
+    padding-right:5px;
+    margin-left:5px;
+    margin-right:5px;
+    
+}
+
+span:hover {
+    cursor:pointer;   
+}
+
+#exercise1 {
+    margin-top: 15%;
+    align-items: center;   
+}
+
+
+#submitButton {
+    margin:auto;
+    display:flex;
+}
+
+.emptyPlaceHolder {
+    display:block;
+    margin:auto;
+    width: 50%;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.questionsDiv {
+    height:50px;
+    width:50%;
+    border-radius:5px;
+    border:1px solid #D3D3D3;
+    margin: auto;
+   
+}
+
+.moved {
+  transform: translateX(10px);
+  transform: translateY(10px);
+}
+
+

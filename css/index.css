@@ -1,0 +1,51 @@
+body {
+    margin:0;
+    font-family:calibri;
+}
+
+/*HEADER*/
+header {
+      display:block;
+      height:45px;
+      width:100%;
+      padding:7px;
+      background-color:yellow;
+  }
+
+.logo {
+float:left;
+height: 45px;
+
+}
+
+.logoParagraph {
+ float:left;
+ margin:0;
+ padding-left:15px;
+ padding-top:7px;
+ font-family:Trebuchet MS;
+font-size:24px;
+}
+
+.headerLinks {
+      display:flex;
+      float:right;
+      font-size:18px;
+      margin:0;
+      padding-top:9px;
+      margin-right:15px;
+  }
+  
+ .headerLinks li {
+      display:inline;
+      padding-left:5px;
+      padding-right:5px;
+  
+  }
+  
+a {
+          text-decoration:none;
+          color:black;
+          font-family:calibri;
+  
+  }

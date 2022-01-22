@@ -1,0 +1,109 @@
+body {
+    margin:0;
+    font-family:calibri;
+}
+
+/*HEADER*/
+header {
+      display:block;
+      height:45px;
+      width:100%;
+      padding:7px;
+      background-color:yellow;
+  }
+
+.logo {
+float:left;
+height: 45px;
+
+}
+
+.logoParagraph {
+ float:left;
+ margin:0;
+ padding-left:15px;
+ padding-top:7px;
+ font-family:Trebuchet MS;
+font-size:24px;
+}
+
+.headerLinks {
+      display:flex;
+      float:right;
+      font-size:18px;
+      margin:0;
+      padding-top:9px;
+      margin-right:15px;
+  }
+  
+ .headerLinks li {
+      display:inline;
+      padding-left:5px;
+      padding-right:5px;
+  
+  }
+  
+a {
+          text-decoration:none;
+          color:black;
+          font-family:calibri;
+  
+  }
+
+#wrapper{
+ display:flex;   
+}
+
+#sidebar {
+  width:20%;
+}
+
+  .nameConversational {
+    height:45px;
+    width:100%;
+    background:#FC3E8C;
+    text-align:center;
+    font-size:24px;
+    padding-top:15px;
+    color:#FFFFFF;
+  }
+
+.panel {
+    height:25px;
+    width:100%;
+    border:none;
+    text-align:left;
+    font-size:20px;
+}
+
+.panel:hover{
+  cursor:pointer;
+}
+
+.list {
+  display:block;
+}
+
+.area {
+  padding:0;
+  padding-left:5px;
+  margin:0;
+  display:none;
+}
+
+.area li {
+  font-size:20px;
+}
+
+.area li:hover {
+  color:#0096FF;
+  cursor:pointer;
+}
+
+#contents {
+width:80%;
+}
+
+.tab {
+ display:flex;  
+}
