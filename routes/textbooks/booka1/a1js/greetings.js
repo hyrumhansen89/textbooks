@@ -1,9 +1,13 @@
 //ACTIVATE TABS
-$(document).ready(function() {
-$(".tablinks").click(function () {
-    $(this).toggleClass("active");      
+const tabs = document.querySelectorAll('.tablinks') 
+
+tabs.forEach(tablinks => {
+  tablinks.addEventListener('click', addAClass);
 });
-});
+
+function addAClass() {
+	tabs.classList.toggle("active");
+}
 
 //GREETINGS EXERCISE 1
 $(document).ready(function(){})
