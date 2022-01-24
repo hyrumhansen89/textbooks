@@ -20,7 +20,7 @@ body {
     background-color:#808080;   
 }
 
-span {
+/* span {
     height:45px;
     font-size:25px;
     background:#45f248;
@@ -33,7 +33,7 @@ span {
     margin-left:5px;
     margin-right:5px;
     
-}
+} */
 
 span:hover {
     cursor:pointer;   
