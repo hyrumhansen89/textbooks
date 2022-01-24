@@ -44,6 +44,11 @@ span:hover {
     align-items: center;   
 }
 
+.form-container {
+    width:50%;
+    height:100vh;
+    margin:auto;
+}
 
 #submitButton {
     margin:auto;
