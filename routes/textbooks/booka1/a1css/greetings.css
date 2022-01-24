@@ -40,14 +40,17 @@ span:hover {
 }
 
 #exercise1 {
-    margin-top: 15%;
+    margin-top: 5%;
     align-items: center;   
 }
 
 .form-container {
     width:50%;
-    height:100vh;
+    min-height:100vh;
     margin:auto;
+    border:3px solid #1269C7;
+    box-shadow:5px 5px 5px #808080;
+    padding:10px;
 }
 
 #submitButton {
