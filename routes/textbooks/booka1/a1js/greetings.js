@@ -1,13 +1,35 @@
 //ACTIVATE TABS
-const tabs = document.querySelectorAll('.tablinks') 
+//CREATE VARIABLES
+const parentDiv = document.getElementById('tab-container');
+const tabs = ['contractions', 'spelling', 'nationality', 'age', 'grammar'];
 
-tabs.forEach(tablinks => {
-  tablinks.addEventListener('click', addAClass);
-});
 
-function addAClass() {
-	tabs.classList.toggle("active");
-}
+//CREATE DIVS
+for(let i = 0; i < tabs.length; i++){
+    const tablinks = document.createElement('div');
+    tablinks.id = tabs[i];
+    tablinks.classList = 'tablinks'
+    tablinks.innerHTML = tablinks.id;
+    parentDiv.appendChild(tablinks);
+};
+
+//CREATE CLASS ON ARRAY ITEMS
+let element = document.querySelectorAll('.tablinks');
+
+//LOOP THROUGH ARRAY AND ADD OR REMOVE CLASS
+const handleClick = (e) => {
+    // e.preventDefault();
+    element.forEach(node => {
+      node.classList.remove('active');
+    });
+    e.currentTarget.classList.add('active');
+  
+  }
+  
+//ADD EVENT HANDLER TO DIVS
+  element.forEach(node => {
+    node.addEventListener('click', handleClick)
+  });
 
 //GREETINGS EXERCISE 1
 $(document).ready(function(){})
