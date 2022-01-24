@@ -4,14 +4,14 @@ const parentDiv = document.getElementById('tab-container');
 const tabs = ['contractions', 'spelling', 'nationality', 'age', 'grammar'];
 
 
-//CREATE DIVS
-for(let i = 0; i < tabs.length; i++){
-    const tablinks = document.createElement('div');
-    tablinks.id = tabs[i];
-    tablinks.classList = 'tablinks'
-    tablinks.innerHTML = tablinks.id;
-    parentDiv.appendChild(tablinks);
-};
+// //CREATE DIVS
+// for(let i = 0; i < tabs.length; i++){
+//     const tablinks = document.createElement('div');
+//     tablinks.id = tabs[i];
+//     tablinks.classList = 'tablinks'
+//     tablinks.innerHTML = tablinks.id;
+//     parentDiv.appendChild(tablinks);
+// };
 
 //CREATE CLASS ON ARRAY ITEMS
 let element = document.querySelectorAll('.tablinks');
