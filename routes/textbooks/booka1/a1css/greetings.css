@@ -16,7 +16,7 @@ body {
 }
 
 .tablinks:hover {
-    curser:pointer;
+    cursor:pointer;
 }
 
 .active {
