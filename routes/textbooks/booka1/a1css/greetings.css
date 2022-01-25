@@ -13,7 +13,10 @@ body {
     border:none;
     text-align:center;
     font-size:20px;
-    
+}
+
+.tablinks:hover {
+    curser:pointer;
 }
 
 .active {
