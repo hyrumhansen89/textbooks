@@ -3,6 +3,17 @@
 const parentDiv = document.getElementById('tab-container');
 const tabs = ['contractions', 'spelling', 'nationality', 'age', 'grammar'];
 
+//CREATE BUTTONS
+for(let i = 0; i < tabs.length; i++){
+    const tablinks = document.createElement('div');
+    tablinks.id = tabs[i];
+    tablinks.classList = 'tablinks'
+    tablinks.innerHTML = tabs[i];
+    // add a data attribute;
+    tablinks.dataset.tab = 'exercise' + (i + 1); 
+    parentDiv.appendChild(tablinks);
+};
+
 //CREATE CLASS ON ARRAY ITEMS
 let element = document.querySelectorAll('.tablinks');
 
