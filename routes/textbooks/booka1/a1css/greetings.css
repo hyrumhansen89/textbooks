@@ -60,6 +60,15 @@ span:hover {
     padding:10px;
 }
 
+.form-container2 {
+    width:85%;
+    min-height:50vh;
+    margin:auto;
+    border:3px solid #1269C7;
+    box-shadow:5px 5px 5px #808080;
+    padding:10px;
+}
+
 img {
     max-height:221.px;
     max-width:190.2px;
