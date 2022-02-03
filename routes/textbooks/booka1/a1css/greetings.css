@@ -64,9 +64,15 @@ span:hover {
     width:85%;
     min-height:50vh;
     margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
     border:3px solid #1269C7;
     box-shadow:5px 5px 5px #808080;
     padding:10px;
+}
+
+.form-container3 {
+    
 }
 
 img {
