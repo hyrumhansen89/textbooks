@@ -1,7 +1,7 @@
 //ACTIVATE TABS
 //CREATE VARIABLES
 const parentDiv = document.getElementById('tab-container');
-const tabs = ['contractions', 'spelling', 'nationality', 'age', 'grammar'];
+const tabs = ['Contractions', 'Put In Order', 'Nationality', 'Spelling', 'Age'];
 
 //CREATE BUTTONS
 for(let i = 0; i < tabs.length; i++){
