@@ -85,6 +85,10 @@ select {
     outline:none;
 }
 
+.map {
+ max-height:100vh;   
+}
+
 img {
     max-height:221.px;
     max-width:190.2px;
