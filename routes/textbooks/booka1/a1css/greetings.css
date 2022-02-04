@@ -80,6 +80,10 @@ span:hover {
     
 }
 
+select {
+    outline:none;
+}
+
 img {
     max-height:221.px;
     max-width:190.2px;
