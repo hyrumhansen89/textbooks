@@ -4,7 +4,7 @@
             <meta charset="UTF-8"/>
             <meta name="viewport" content ="width=device-width, initial-scale=1.0"/>
             <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-            <link rel="stylesheet" type="text/css" href="routescss/literature.css">
+            <link rel="stylesheet" type="text/css" href="routescss/schedule.css">
         </head>
     <body>
 
@@ -18,7 +18,55 @@
         <li class="headerLinks"><a href="https://beehiveeducation.github.io/textbooks/routes/games.html">Games</a></li>
     </ul>
 </header>
+<body>
+<div id="container">
+	<div id="header">
+		
+		<div id="yearDiv">
+			    <div id="yearText"></div>
+		</div>
 
+		<div id="monthDiv">
+			<div id="monthPicker">
+			<a id="backButton">&#10094;</a>
+			<div id="monthText"></div>
+			<a id="nextButton">&#10095;</a>
+			</div>
+		</div>
+	</div>	
+
+	<div id="weekDays">
+		<ul class="daysUl">
+			<li>Sun</li>
+			<li>Mon</li>
+			<li>Tues</li>
+			<li>Wed</li>
+			<li>Thur</li>
+			<li>Fri</li>
+			<li>Sat</li>
+		</ul>
+	  </div>
+
+	<div id="calendar"></div>
+</div>
+
+<div id="newEventModal">
+	<h2>NewEvent</h2>
+	<input id="eventTitleInput" placeholder="Event Title">
+	<button id="saveButton">Save</button>
+	<button id="cancelButton">Cancel</button>
+</div>
+
+<div id="deleteEventModal">
+	<h2>Event</h2>
+	<p id="eventText"></p>
+	<button id="deleteButton">Delete</button>
+	<button id="closeButton">Close</button>
+</div>
+
+<div id="modalBackDrop"></div>
+
+<script src="calendarScript.js"></script>
 
         
 
