@@ -22,38 +22,185 @@ height: 45px;
 
 }
 
-p {
-      float:left;
-      margin:0;
-      padding-left:15px;
-      padding-top:7px;
-      font-family:Trebuchet MS;
-      font-size:24px;
+body {
+	font-family:Veranda, sans-serif;
+	margin-left:0;
+
 }
 
-ul {
-      display:inline-block;
-      font-size:18px;
-      float:right;
-      margin:0;
-      padding-top:9px;
-      margin-right:15px;
-  }
-  
-  ul li {
-      display:inline;
-      padding-left:5px;
-      padding-right:5px;
-  
-  }
-  
-  ul li a {
-
-          color:black;
-          font-family:calibri;
-  
-  }
-
 #container {
+	height:100%;
+	width:50vw;
+	margin:auto;
+	background-color: white;
+	filter: drop-shadow(5px 5px 5px #282828);
+	z-index: 1;
 
+}
+
+#header {
+	height:150px;
+	margin:0;
+	padding:0;
+	width:100%;
+	background:white;
+	display:inline-block;
+	position:relative;
+}
+
+#yearDiv {
+	position:relative;
+	top:35px;
+	height:80px;
+	width:35%;
+	float:left;
+	background:linear-gradient(45deg, #FFA701, #FFDA00);
+	z-index: 1;
+	clip-path: polygon(0% 0%, 100% 0%, 67% 100%, 0% 100%);
+}
+
+#monthDiv {
+	position:absolute;
+	height:100px;
+	width:90%;
+	margin-left:10%;
+    float:right;
+    background:linear-gradient(to bottom, #28282B, #000000);
+    z-index: 0;
+    clip-path:polygon(17% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+#yearText {
+	display:inline-block;
+	margin:auto;
+	font-size:36px;
+	font-weight: bold;
+	margin-left:15%;
+	position:relative;
+	top:15px;
+	color:#282828;
+}
+
+#monthPicker {
+	display:flex;
+	flex:1;
+	margin-left:30%;
+	margin-top:10px;
+}
+
+#monthText {
+	padding-left:5px;
+	padding-right:10px;
+	display:inline-block;
+	color:white;
+	position:relative;
+	font-size:65px;
+	font-weight: bold;
+}
+
+#backButton, #nextButton {
+	padding-top: 30px;
+	display:inline-block;
+	color:white;
+}
+
+#backButton, #nextButton:hover {
+	cursor:pointer;
+}
+
+.newDiv{
+	height:15px;
+}
+
+#weekDays{
+	width:90%;
+	margin:auto;
+	display:block;
+}
+
+.daysUl {
+	padding:0;
+	display:flex;
+	margin:0;
+
+	border-bottom:2px solid #282828;
+	
+	margin:auto;
+}
+.daysUl li {
+	list-style: none;
+	flex:1;
+	float:left;
+	text-align:center;
+}
+
+#dayDiv {
+	height:19.09px;
+	height:88.69px;
+}
+
+#calendar {
+	padding-top:10px;
+	width:90%;
+	margin:0 auto;
+	display:grid;
+	background:white;
+	grid-template-columns:repeat(7, 1fr);
+}
+
+
+#newEventModal, #deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: #e8f4fa;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+}
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton, #deleteButton {
+  background-color: #d36c6c;
+}
+#saveButton, #closeButton {
+  background-color: #92a1d1;
+}
+#eventText {
+  font-size: 14px;
+}
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.event {
+  font-size: 12px;
+  padding: 3px;
+  background-color: #58bae4;
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
 }
