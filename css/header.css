@@ -48,6 +48,10 @@ header {
       float:right;
   }
   
+.headerLinks:hover {
+      cursor:pointer;
+}
+
  .headerLinks li {
       display:inline;
       padding-left:5px;
