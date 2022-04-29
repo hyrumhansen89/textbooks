@@ -7,12 +7,15 @@ function initHeader() {
         x.addEventListener('click', function (e) {
             let individualClass = e.target.classList.value;
             console.log(individualClass)
-//             loadpage(e);  
+            loadpage(e);  
         })
     })
 }
 
-// homebtn.addEventListener('click', function(){
-//   location.href = "https://beehiveeducation.github.io/textbooks/";
-  
-// })
+function loadpage(e) {
+    let id = e.target.classList.value;
+    const classes = classString.split(' ');
+    individualClass = classes.find(x => x != link);
+    window.location.href = `../routes/${individualClass}.html`;
+
+}
