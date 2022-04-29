@@ -7,8 +7,6 @@ initHeader();
 function initHeader() {
     headerLinks.forEach(x => {
         x.addEventListener('click', function (e) {
-            let individualClass = e.target.classList.value;
-            console.log(individualClass)
             loadpage(e);  
         })
     })
@@ -16,6 +14,7 @@ function initHeader() {
 
 function loadpage(e) {
     let id = e.target.classList.value;
+    console.log(id)
     const classes = id.split(' ');
     individualClass = classes.find(x => x != link);
     if(window.location.href = "/textbooks/routes/home.html") {
