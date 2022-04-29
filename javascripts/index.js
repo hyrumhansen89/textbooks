@@ -14,7 +14,7 @@ function initHeader() {
 
 function loadpage(e) {
     let id = e.target.classList.value;
-    const classes = classString.split(' ');
+    const classes = id.split(' ');
     individualClass = classes.find(x => x != link);
     window.location.href = `../routes/${individualClass}.html`;
 
