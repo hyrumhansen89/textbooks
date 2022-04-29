@@ -18,6 +18,6 @@ function loadpage(e) {
     let id = e.target.classList.value;
     const classes = id.split(' ');
     individualClass = classes.find(x => x != link);
-    window.location.href = `../routes/${individualClass}.html`;
+    window.location.href = `beehiveeducation.github.io/textbooks/routes/${individualClass}.html`;
 
 }
