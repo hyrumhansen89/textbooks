@@ -18,6 +18,8 @@ function loadpage(e) {
     let id = e.target.classList.value;
     const classes = id.split(' ');
     individualClass = classes.find(x => x != link);
+    if(individualClass == home){
+    window.location.href = "/textbooks/";
+    }
     window.location.href = `/textbooks/routes/${individualClass}.html`;
-
 }
