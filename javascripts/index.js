@@ -3,7 +3,7 @@ const headerLinks = document.querySelectorAll('.headerLinks .link');
 initHeader();
 //Initialize textbooks
 function initHeader() {
-    books.forEach(x => {
+    headerLinks.forEach(x => {
         x.addEventListener('click', function (e) {
             let individualClass = e.target.classList.value;
             console.log(individualClass)
