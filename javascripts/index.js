@@ -7,7 +7,7 @@ function initHeader() {
         x.addEventListener('click', function (e) {
             let individualClass = e.target.classList.value;
             console.log(individualClass)
-            loadpage(e);  
+//             loadpage(e);  
         })
     })
 }
