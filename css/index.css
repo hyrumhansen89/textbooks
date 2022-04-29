@@ -8,17 +8,15 @@ header {
       display:flex;
       height:45px;
       width:100%;
-      padding:7px;
       background-color:yellow;
   }
 
 .homeDiv {
     float:left;
-    
+    background-color:black;
 }
 
 .logo {
-
 height: 45px;
 
 }
