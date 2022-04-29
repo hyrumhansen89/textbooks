@@ -1,29 +1,31 @@
 body {
-    margin:0;
-    font-family:calibri;
+      margin:0;
+      font-family:calibri;
 }
 
 /*HEADER*/
 header {
       display:flex;
-      height:45px;
+      flex:1;
+      height:60px;
       width:100%;
       background-color:yellow;
+      font-family:Trebuchet MS;
   }
 
 .homeDiv {
-    float:left;
-    background-color:black;
+     float:left;
+     background-color:black;
 }
 
 .logo {
-height: 45px;
-
-}
+      height: 45px;
+      padding:6px;
+} 
 
 .logoParagraph {
       margin:0;
-      font-family:Trebuchet MS;
+
       font-size:24px;
       color: yellow;
 }
@@ -31,6 +33,7 @@ height: 45px;
 .headerLinks {
       font-size:18px;
       margin:0;
+      
   }
   
  .headerLinks li {
