@@ -12,9 +12,13 @@ header {
   }
 
 .homeDiv {
-     float:left;
-     background-color:black;
-     height:60px;
+    float: left;
+    background-color: black;
+    height: 60pz;
+    height: 60px;
+    clip-path: polygon(0% 0%, 100% 0%, 67% 100%, 0% 100%);
+    width: 200px;
+    display: flex;
 }
 
 .logo {
