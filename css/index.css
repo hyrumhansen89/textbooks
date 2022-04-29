@@ -49,6 +49,9 @@ header {
       display:inline;
       padding-left:5px;
       padding-right:5px;
+  }
+
+a {
        list-style:none;
        color:black;  
-  }
+}
