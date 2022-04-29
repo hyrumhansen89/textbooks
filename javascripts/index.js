@@ -18,5 +18,8 @@ function loadpage(e) {
     let id = e.target.classList.value;
     const classes = id.split(' ');
     individualClass = classes.find(x => x != link);
+    if(window.location.href = "/textbooks/routes/home.html") {
+        window.location.href = "/textbooks/";
+    }
     window.location.href = `/textbooks/routes/${individualClass}.html`;
 }
