@@ -1,3 +1,5 @@
+const link = 'link'
+
 //INITIALIZE HEADER MENU
 const headerLinks = document.querySelectorAll('.headerLinks .link');
 initHeader();
