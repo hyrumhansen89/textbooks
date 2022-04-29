@@ -12,8 +12,13 @@ header {
       background-color:yellow;
   }
 
+.homeDiv {
+    float:left;
+    
+}
+
 .logo {
-float:left;
+
 height: 45px;
 
 }
