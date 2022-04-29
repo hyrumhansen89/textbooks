@@ -33,6 +33,10 @@ header {
       float:right;
 }
 
+.education {
+      font-size: 12px;
+}
+
 .headerLinks {
       font-size:18px;
       margin-top:18px;
