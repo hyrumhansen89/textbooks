@@ -31,12 +31,8 @@ font-size:24px;
 }
 
 .headerLinks {
-      display:flex;
-      float:right;
       font-size:18px;
       margin:0;
-      padding-top:9px;
-      margin-right:15px;
   }
   
  .headerLinks li {
