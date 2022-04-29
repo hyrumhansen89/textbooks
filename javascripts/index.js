@@ -10,7 +10,7 @@ function initHeader() {
     let id = e.target.classList.value;
     const classes = id.split(' ');
     individualClass = classes.find(x => x != link);
-            if(individualClass.includes('home'){
+            if(individualClass.includes('home')){
                loadHomePage(e);
                }
             loadpage(e);  
