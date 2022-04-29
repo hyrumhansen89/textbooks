@@ -97,25 +97,9 @@ a {
     border:none;
 }
 
-#textbookTitle{
-    height:15%;
-    padding-top:5px;
-    background:white;
-
-}
-
-#texbookPhoto {
-    height:75%;
-    width:200px;
-
-}
-
-#grammar {
-    border:2px solid rgb();
-}
 
 #beginninga1 {
-    background-image: url('bookCovers/a1.png');
+    background-image: url('routesimages/a1.png');
     background-size:cover;
     background-repeat:no-repeat;
 
