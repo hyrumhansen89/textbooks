@@ -22,12 +22,9 @@ height: 45px;
 }
 
 .logoParagraph {
- float:left;
- margin:0;
- padding-left:15px;
- padding-top:7px;
- font-family:Trebuchet MS;
-font-size:24px;
+      margin:0;
+      font-family:Trebuchet MS;
+      font-size:24px;
 }
 
 .headerLinks {
