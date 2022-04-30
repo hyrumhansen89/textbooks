@@ -1,7 +1,7 @@
 const link = 'link'
 
 //INITIALIZE HEADER MENU
-const headerLinks = document.querySelector('.headerLinks .link');
+const headerLinks = document.querySelectorAll('.headerLinks .link');
 initHeader();
 //Initialize textbooks
 function initHeader() {
