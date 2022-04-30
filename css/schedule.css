@@ -1,5 +1,66 @@
 body {
-    margin:0;
+      margin:0;
+      font-family:calibri;
+}
+
+/*HEADER*/
+header {
+      height:60px;
+      width:100%;
+      background-color:yellow;
+      font-family:Trebuchet MS;
+  }
+
+.homeDiv {
+    float: left;
+    background-color: black;
+    height: 60px;
+    clip-path: polygon(0% 0%, 100% 0%, 67% 100%, 0% 100%);
+    width: 200px;
+    display: flex;
+}
+
+.homeDiv:hover {
+    cursor:pointer;
+}
+
+.logo {
+      height: 45px;
+      padding:6px;
+} 
+
+.logoParagraph {
+      margin:0;
+      font-size:24px;
+      color: yellow;
+      float:right;
+      padding-top:7px;
+}
+
+.education {
+      font-size: 12px;
+      display:block;
+}
+
+.headerLinks {
+      font-size:18px;
+      margin-top:18px;
+      float:right;
+  }
+  
+.headerLinks:hover {
+      cursor:pointer;
+}
+
+ .headerLinks li {
+      display:inline;
+      padding-left:5px;
+      padding-right:5px;
+  }
+
+a {
+       text-decoration:none;
+       color:black;  
 }
 
 #container {
