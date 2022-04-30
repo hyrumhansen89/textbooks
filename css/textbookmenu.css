@@ -74,6 +74,7 @@ a {
     border-radius:15px;
     overflow:hidden;
     border:1px solid #D3D3D3;
+    margin:auto;
 }
 
 .textbook:hover {
@@ -82,17 +83,15 @@ a {
     border:none;
 }
 
-
-div#a1.textbook {
+#a1 {
     background-image: url('../images/a1.png');
     background-size:cover;
     background-repeat:no-repeat;
 
 }
 
-#beginninga2 {
-    background-image: url('routesimages/bigBee.jpg');
-    background-size:300px 300px;
+#a2 {
+    background-image: url('../images/a2.png');
     background-repeat:no-repeat;
     background-position:right;
 }
