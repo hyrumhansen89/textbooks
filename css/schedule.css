@@ -2,32 +2,6 @@ body {
     margin:0;
 }
 
-a {
-    text-decoration: none;
-    color:#000000;
-}
-
-header {
-      display:block;
-      height:45px;
-      width:100%;
-      padding:7px;
-      margin:0 auto;
-      background-color:yellow;
-  }
-
-.logo {
-float:left;
-height: 45px;
-
-}
-
-body {
-	font-family:Veranda, sans-serif;
-	margin-left:0;
-
-}
-
 #container {
 	height:100%;
 	width:50vw;
@@ -36,16 +10,6 @@ body {
 	filter: drop-shadow(5px 5px 5px #282828);
 	z-index: 1;
 
-}
-
-#header {
-	height:150px;
-	margin:0;
-	padding:0;
-	width:100%;
-	background:white;
-	display:inline-block;
-	position:relative;
 }
 
 #yearDiv {
