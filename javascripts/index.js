@@ -5,24 +5,20 @@ const headerLinks = document.querySelector('.headerLinks .link');
 initHeader();
 //Initialize textbooks
 function initHeader() {
-    //get individual ids
-    let id = e.target.classList.value;
-    const classes = id.split(' ');
-    individualClass = classes.find(x => x != link);
     headerLinks.forEach(x => {
         x.addEventListener('click', function (e) {
-    console.log(individualClass);
-//             loadpage(e);  
+            loadpage(e);  
         })
     })
 }
 
 
 // function loadpage(e) {
-//     let id = e.target.classList.value;
-//     const classes = id.split(' ');
-//     individualClass = classes.find(x => x != link);
-//             if(individualClass.includes('home')){
-//               
-//     window.location.href = `beehiveeducation.github.io/textbooks`
-//                }
+    const home = document.querySelector('.home').setAttribute('href', 'beehiveeducation.github.io/textbooks/')
+    const schedule = document.querySelector('.schedule').setAttribute('href', 'beehiveeducation.github.io/textbooks/routes/schedule.html')
+    const books = document.querySelector('.books').setAttribute('href', 'beehiveeducation.github.io/textbooks/routes/books.html')
+    const literature = document.querySelector('.literature').setAttribute('href', 'beehiveeducation.github.io/textbooks/routes/literature.html')
+    const games = document.querySelector('.games').setAttribute('href', 'beehiveeducation.github.io/textbooks/routes/games.html')
+    
+    window.location.href = "beehiveeducation.github.io/textbooks"
+}
