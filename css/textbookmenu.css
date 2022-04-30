@@ -83,7 +83,7 @@ a {
 }
 
 
-#a1 {
+div#a1.textbook {
     background-image: url('../images/a1.png');
     background-size:cover;
     background-repeat:no-repeat;
