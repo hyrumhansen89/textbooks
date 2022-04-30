@@ -17,5 +17,5 @@ function loadpage(e) {
     let id = e.target.classList.value;
     const classes = id.split(' ');
     routes = classes.find(x => x != link);
-    window.location.href = `../routes/${routes}.html`;
+    window.location.href = `../textbooks/routes/${routes}.html`;
 }
