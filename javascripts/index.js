@@ -16,10 +16,10 @@ function initHeader() {
 
 function loadpage(e) {
     var home = document.querySelector('.home') ? document.querySelector("home").setAttribute("href", "https://beehiveeducation.github.io/textbooks/") : null;
-    var schedule = document.querySelector('.home') ? document.querySelector("home").setAttribute("href", "https://beehiveeducation.github.io/textbooks/routes/schedule.html") : null;
-    var books = document.querySelector('.home') ? document.querySelector("home").setAttribute("href", "https://beehiveeducation.github.io/textbooks//routes/books.html") : null;
-    var literature = document.querySelector('.home') ? document.querySelector("home").setAttribute("href", "https://beehiveeducation.github.io/textbooks/routes/literature.html") : null;
-    var games = document.querySelector('.home') ? document.querySelector("home").setAttribute("href", "https://beehiveeducation.github.io/textbooks/routes/games.html") : null;
+    var schedule = document.querySelector('.schedule') ? document.querySelector("schedule").setAttribute("href", "https://beehiveeducation.github.io/textbooks/routes/schedule.html") : null;
+    var books = document.querySelector('.books') ? document.querySelector("books").setAttribute("href", "https://beehiveeducation.github.io/textbooks//routes/books.html") : null;
+    var literature = document.querySelector('.literature') ? document.querySelector("literature").setAttribute("href", "https://beehiveeducation.github.io/textbooks/routes/literature.html") : null;
+    var games = document.querySelector('.games') ? document.querySelector("games").setAttribute("href", "https://beehiveeducation.github.io/textbooks/routes/games.html") : null;
 
 
 
