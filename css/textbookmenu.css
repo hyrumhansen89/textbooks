@@ -1,0 +1,98 @@
+body {
+    margin:0;
+}
+
+header {
+      height:60px;
+      width:100%;
+      background-color:yellow;
+      font-family:Trebuchet MS;
+  }
+
+.homeDiv {
+    float: left;
+    background-color: black;
+    height: 60px;
+    clip-path: polygon(0% 0%, 100% 0%, 67% 100%, 0% 100%);
+    width: 200px;
+    display: flex;
+}
+
+.homeDiv:hover {
+    cursor:pointer;
+}
+
+.logo {
+      height: 45px;
+      padding:6px;
+} 
+
+.logoParagraph {
+      margin:0;
+      font-size:24px;
+      color: yellow;
+      float:right;
+      padding-top:7px;
+}
+
+.education {
+      font-size: 12px;
+      display:block;
+}
+
+.headerLinks {
+      font-size:18px;
+      margin-top:18px;
+      float:right;
+  }
+  
+ .headerLinks li {
+      display:inline;
+      padding-left:5px;
+      padding-right:5px;
+  }
+
+a {
+       text-decoration:none;
+       color:black;  
+}
+
+#textbookWrapper{
+    padding-top:100px;
+    height:100vh;
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap:50px;
+}
+
+
+.textbook {
+    height:300px;
+    width:200px;
+    border-radius:15px;
+    overflow:hidden;
+    border:1px solid #D3D3D3;
+}
+
+.textbook:hover {
+    cursor:pointer;
+    box-shadow:3px 5px grey;
+    border:none;
+}
+
+
+#a1 {
+    background-image: url('../images/a1.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+
+}
+
+#beginninga2 {
+    background-image: url('routesimages/bigBee.jpg');
+    background-size:300px 300px;
+    background-repeat:no-repeat;
+    background-position:right;
+}
