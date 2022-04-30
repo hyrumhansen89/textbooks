@@ -7,21 +7,26 @@ initHeader();
 function initHeader() {
     headerLinks.forEach(x => {
         x.addEventListener('click', function (e) {
-    let id = e.target.classList.value;
-    const classes = id.split(' ');
-    individualClass = classes.find(x => x != link);
-            if(individualClass.includes('home')){
-               loadHomePage(e);
-               }
+
             loadpage(e);  
         })
     })
 }
 
-function loadHomePage() {
-    window.location.href = "/textbooks/";
-}
 
 function loadpage(e) {
-    window.location.href = `/textbooks/routes/${individualClass}.html`;
-}
+    var home = document.querySelector('.home') ? document.querySelector("home").setAttribute("href", "https://beehiveeducation.github.io/textbooks/") : null;
+    var schedule = document.querySelector('.home') ? document.querySelector("home").setAttribute("href", "https://beehiveeducation.github.io/textbooks/routes/schedule.html") : null;
+    var books = document.querySelector('.home') ? document.querySelector("home").setAttribute("href", "https://beehiveeducation.github.io/textbooks//routes/books.html") : null;
+    var literature = document.querySelector('.home') ? document.querySelector("home").setAttribute("href", "https://beehiveeducation.github.io/textbooks/routes/literature.html") : null;
+    var games = document.querySelector('.home') ? document.querySelector("home").setAttribute("href", "https://beehiveeducation.github.io/textbooks/routes/games.html") : null;
+
+
+
+
+//     let id = e.target.classList.value;
+//     const classes = id.split(' ');
+//     individualClass = classes.find(x => x != link);
+//             if(individualClass.includes('home')){
+//                loadHomePage(e);
+               }
