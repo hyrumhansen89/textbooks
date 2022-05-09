@@ -13,6 +13,6 @@ function initTextbooks() {
 function loadpage(e) {
     let id = e.target.classList.value;
     const classes = id.split(' ');
-    books = classes.find(x => x != textbook);
+    books = classes.find(x => x != 'textbook');
     window.location.href = `../textbooks/routes/textbooks/${books}.html`;
 }
