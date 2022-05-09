@@ -1,0 +1,60 @@
+#wrapper{
+ display:flex;   
+}
+
+#sidebar {
+  width:20%;
+}
+
+  .nameA1 {
+    height:45px;
+    width:100%;
+    background:#000000;
+    text-align:center;
+    font-size:24px;
+    padding-top:15px;
+    color:#FFFFFF;
+  }
+
+.panel {
+    height:25px;
+    width:100%;
+    border:none;
+  }
+
+.panel {
+  text-align:left;
+  font-size:20px;
+}
+
+.panel:hover{
+  cursor:pointer;
+}
+
+.list {
+  display:block;
+}
+
+.area {
+  padding:0;
+  padding-left:5px;
+  margin:0;
+  display:none;
+}
+
+.area li {
+  font-size:20px;
+}
+
+.area li:hover {
+  color:#0096FF;
+  cursor:pointer;
+}
+
+#contents {
+width:80%;
+}
+
+.tab {
+ display:flex;  
+}
