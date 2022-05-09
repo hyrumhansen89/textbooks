@@ -83,15 +83,15 @@ a {
     border:none;
 }
 
-#a1 {
+.a1 {
     background-image: url('../images/A1.png');
     background-size:cover;
     background-repeat:no-repeat;
 
 }
 
-#a2 {
-    background-image: url('../images/a2.png');
+.a2 {
+    background-image: url('../images/A2.png');
+    background-size:cover;
     background-repeat:no-repeat;
-    background-position:right;
 }
