@@ -139,60 +139,60 @@ const menu = [
 ];
 
 //slide menu down
-function myFunction(chapter) {
-    $('#' + chapter).slideToggle();
+const slideDown = () => {
+    const button = 
 }
 
 
 //create menu
 function createMenu(){
-    const container = $('#sidebar');
+    const container = document.querySelector('.sidebar');
 
-    menu.forEach(singleMenuItem => {
+    menu.forEach(chapter => {
         //create button first
-        const button = `<button onclick="myFunction('${singleMenuItem.id}')"  class="panel">${singleMenuItem.title}</button>`;
+        const button = `<button class="panel">${chapter.title}</button>`;
         container.append(button)
 
         //create our list
-        let list = `<ul class='area' id="${singleMenuItem.id}">`;
-        singleMenuItem.list.forEach(singleListItem => {
-            list += `<li data-page="${singleListItem.id}" class="list">${singleListItem.title}</li>`;
-        });
-        list += '</ul>';
-        container.append(list);
+//         let list = `<ul class='area' id="${singleMenuItem.id}">`;
+//         singleMenuItem.list.forEach(singleListItem => {
+//             list += `<li data-page="${singleListItem.id}" class="list">${singleListItem.title}</li>`;
+//         });
+//         list += '</ul>';
+//         container.append(list);
     });
 }
 
-function showTab(exercise) {
-    $('.exercise-content').hide();
-    $('#' + exercise).show();
-}
+// function showTab(exercise) {
+//     $('.exercise-content').hide();
+//     $('#' + exercise).show();
+// }
 
-function hideAllTabs() {
-    $('.exercise-content').hide();
-}
+// function hideAllTabs() {
+//     $('.exercise-content').hide();
+// }
 
-//load exercises
-$(document).on('click','.list', function(){
-        //find the page we want to load
-        const pageName = $(this).data('page');
-        if (!pageName){
-            return;
-        }
-        $('#contents').load(`routes/textbookactivities/${pageName}.html`, function() {
-            hideAllTabs();
-            showTab('exercise1');
-        });
-});
+// //load exercises
+// $(document).on('click','.list', function(){
+//         //find the page we want to load
+//         const pageName = $(this).data('page');
+//         if (!pageName){
+//             return;
+//         }
+//         $('#contents').load(`routes/textbookactivities/${pageName}.html`, function() {
+//             hideAllTabs();
+//             showTab('exercise1');
+//         });
+// });
 
-$(document).on('click','.tablinks',function(){
-    const tabName = $(this).data('tab');
-    if (!tabName){
-        return;
-    }
-    showTab(tabName);
-});
+// $(document).on('click','.tablinks',function(){
+//     const tabName = $(this).data('tab');
+//     if (!tabName){
+//         return;
+//     }
+//     showTab(tabName);
+// });
 
-$(document).ready(function() {
-    createMenu();
-});
+// $(document).ready(function() {
+//     createMenu();
+// });
