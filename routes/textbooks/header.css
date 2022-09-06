@@ -1,0 +1,24 @@
+* {
+ margin:0;
+ padding:0;
+}
+
+.header {
+  width:100%;
+  height:75px;
+  display:flex;
+  list-style:none;
+  padding:10px;
+}
+
+.logo {
+  height:100%;
+  margin-right:auto;
+}
+
+a {
+  padding-top:15px;
+  padding-right:30px;
+  text-decoration:none;
+  color:black;
+}
