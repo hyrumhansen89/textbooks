@@ -1,13 +1,17 @@
-header {
+.header {
   width:100%;
   height:75px;
-  
-}
-
-.homeDiv {
-  height:75px;
+  display:flex;
+  list-style:none;
 }
 
 .logo {
   height:100%;
+  margin-right:auto;
+}
+
+a {
+  padding-right:30px;
+  text-decoration:none;
+  
 }
