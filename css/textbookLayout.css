@@ -1,12 +1,12 @@
-#wrapper{
+.wrapper{
  display:flex;   
 }
 
-#sidebar {
+.sidebar {
   width:20%;
 }
 
-  .nameA1 {
+ .nameA1 {
     height:45px;
     width:100%;
     background:#000000;
