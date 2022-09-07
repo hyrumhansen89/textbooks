@@ -138,6 +138,8 @@ const menu = [
 
 ];
 
+console.log('hello');
+
 //slide menu down
 
     const container = document.querySelector('.sidebar');
