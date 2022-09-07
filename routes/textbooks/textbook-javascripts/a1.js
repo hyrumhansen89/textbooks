@@ -147,4 +147,5 @@ const createMenu = () => {
         const button = `<button class="panel">${chapter.title}</button>`;
         container.append(button)
 })
+}
 createMenu();
