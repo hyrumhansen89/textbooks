@@ -150,7 +150,7 @@ const createMenu = () => {
         //create button first
         const button = `<button class="panel">${chapter.title}</button>`;
         container.append(button)
-    }
+    })
         //create our list
 //         let list = `<ul class='area' id="${singleMenuItem.id}">`;
 //         singleMenuItem.list.forEach(singleListItem => {
