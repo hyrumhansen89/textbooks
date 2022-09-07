@@ -139,21 +139,23 @@ const menu = [
 ];
 
 
+//variables
+let container = document.querySelector('.sidebar');
 
-let container = document.querySelector('.sidebar')
+
+
+const createMenu = () => {
 menu.forEach(chapter => {
-    //create button first
-    container.innerHTML += `<button class="panel">${chapter.title}</button>`;
-    
-    //create our list
-        let list = `<ul class='area' id="${singleMenuItem.id}">`;
-        singleMenuItem.list.forEach(singleListItem => {
-            list += `<li data-page="${singleListItem.id}" class="list">${singleListItem.title}</li>`;
-        });
-        list += '</ul>';
-        container.append(list);
-    });
-}
+    let button = `<button class="panel">${chapter.title}</button>`;
+    container.innerHTML += button 
 
-})
+    chapter.list.forEach(subject => {
+        let listItem = `<li class="subject">${subject.title}</li>`
+        container.innerHTML += listItem;
+   })
+
+ })
+
+}
+createMenu();
 
