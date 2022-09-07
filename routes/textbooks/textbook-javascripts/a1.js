@@ -144,5 +144,16 @@ let container = document.querySelector('.sidebar')
 menu.forEach(chapter => {
     //create button first
     container.innerHTML += `<button class="panel">${chapter.title}</button>`;
+    
+    //create our list
+        let list = `<ul class='area' id="${singleMenuItem.id}">`;
+        singleMenuItem.list.forEach(singleListItem => {
+            list += `<li data-page="${singleListItem.id}" class="list">${singleListItem.title}</li>`;
+        });
+        list += '</ul>';
+        container.append(list);
+    });
+}
 
 })
+
