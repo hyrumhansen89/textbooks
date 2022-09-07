@@ -6,6 +6,11 @@
   width:20%;
 }
 
+button {
+width:100%; 
+ 
+}
+
 .contents {
     width:80%;
 }
