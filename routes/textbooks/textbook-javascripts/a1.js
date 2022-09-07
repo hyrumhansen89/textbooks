@@ -144,7 +144,7 @@ let container = document.querySelector('.sidebar')
 const createMenu = () => {
    for(let x = 0; x < menu.length; x++) {
         //create button first
-        container.innerHTML = `<button class="panel">${chapter[x].title}</button>`;
+        container.innerHTML = `<button class="panel">${menu[x].title}</button>`;
 }
 }
 createMenu();
