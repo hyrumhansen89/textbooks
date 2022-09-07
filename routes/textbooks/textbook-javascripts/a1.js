@@ -139,15 +139,3 @@ const menu = [
 ];
 
 console.log('hello');
-
-//slide menu down
-
-    const container = document.querySelector('.sidebar');
-
-//create menu
-const createMenu = () => {
-    menu.forEach(chapter => {
-        //create button first
-        const button = `<button class="panel">${chapter.title}</button>`;
-        container.append(button)
-    })
