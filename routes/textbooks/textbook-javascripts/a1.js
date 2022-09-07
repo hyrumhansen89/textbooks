@@ -142,9 +142,9 @@ const menu = [
 
 let container = document.querySelector('.sidebar')
 const createMenu = () => {
-   menu.forEach((chapter) => {
+   for(let x = 0; x < menu.length; x++) {
         //create button first
-        container.innerHTML = `<button class="panel">${chapter.title}</button>`;
-})
+        container.innerHTML = `<button class="panel">${chapter[x].title}</button>`;
+}
 }
 createMenu();
