@@ -144,18 +144,17 @@ let container = document.querySelector('.sidebar');
 
 
 
+
 const createMenu = () => {
 menu.forEach(chapter => {
-    let button = `<button class="panel">${chapter.title}</button>`;
+    let button = `<button onclick="slideDown()" class="panel">${chapter.title}</button>`;
     container.innerHTML += button 
 
     chapter.list.forEach(subject => {
         let listItem = `<li class="subject">${subject.title}</li>`
         container.innerHTML += listItem;
    })
-
  })
-
 }
 createMenu();
 
