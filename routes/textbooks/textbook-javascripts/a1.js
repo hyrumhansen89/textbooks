@@ -144,7 +144,13 @@ let container = document.querySelector('.sidebar');
 
 
 
+//slidedown
+const slideDown = () => {
+console.log('clicked')
+}
 
+
+//create menu
 const createMenu = () => {
 menu.forEach(chapter => {
     let button = `<button onclick="slideDown()" class="panel">${chapter.title}</button>`;
