@@ -144,15 +144,6 @@ let container = document.querySelector('.sidebar');
 
 
 
-//slidedown
-const slideDown = () => {
-let ulList = document.querySelectorAll('.ul-item');
-if(ulList.classList === '') {
-ulList.classList = 'hide'} else {
-ulList.classList = ''} 
-alert(ulList)
-}
-
 
 //create menu
 const createMenu = () => {
@@ -171,7 +162,14 @@ menu.forEach(chapter => {
        let buttons = document.querySelectorAll('.panel');
        
        buttons.forEach(button => {
-       button.addEventListener('click', slideDown) 
+       button.addEventListener('click', () => {
+       let items = document.querySelectorAll('.ul-item')
+
+       if(items.classList === '') {
+items.classList = 'hide'} else {
+items.classList = ''} 
+alert(items) 
+}) 
 }) 
 }
 createMenu();
