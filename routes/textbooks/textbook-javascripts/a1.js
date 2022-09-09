@@ -144,7 +144,12 @@ let container = document.querySelector('.sidebar');
 
 
 const slideDown = () => {
-   
+   let ulList = document.querySelectorAll('.ul-item')
+   if(ulList.style.display = 'none') {
+   ulList.style.display = 'block'} 
+else
+   {ulList.style.display = 'none' 
+} 
 } 
 
 //create menu
