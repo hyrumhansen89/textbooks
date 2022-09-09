@@ -143,7 +143,9 @@ const menu = [
 let container = document.querySelector('.sidebar');
 
 
-
+const slideDown = () => {
+   
+} 
 
 //create menu
 const createMenu = () => {
@@ -162,14 +164,7 @@ menu.forEach(chapter => {
        let buttons = document.querySelectorAll('.panel');
        
        buttons.forEach(button => {
-       button.addEventListener('click', () => {
-       let items = document.querySelectorAll('.ul-item')
-
-       if(items.classList === '') {
-items.classList = 'hide'} else {
-items.classList = ''} 
-alert(items) 
-}) 
+       button.addEventListener('click', slideDown)
 }) 
 }
 createMenu();
