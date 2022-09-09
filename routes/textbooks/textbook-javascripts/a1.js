@@ -145,7 +145,8 @@ let container = document.querySelector('.sidebar');
 
 
 //slidedown
-const slideDown = (ulList) => {
+const slideDown = () => {
+let ulList = document.querySelectorAll('.ul-item');
 if(ulList.classList === '') {
 ulList.classList = 'hide'} else {
 ulList.classList = ''} 
@@ -168,9 +169,9 @@ menu.forEach(chapter => {
    })
  })
        let buttons = document.querySelectorAll('.panel');
-       let uls = document.querySelectorAll('.ul-item');
+       
        buttons.forEach(button => {
-       button.addEventListener('click', slideDown(uls)) 
+       button.addEventListener('click', slideDown) 
 }) 
 }
 createMenu();
