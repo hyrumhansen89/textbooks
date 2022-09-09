@@ -144,7 +144,8 @@ let container = document.querySelector('.sidebar');
 
 
 const slideDown = () => {
-   let ulList = document.querySelectorAll('.ul-item')
+   let ulList = document.querySelectorAll('.ul-item');
+
    ulList.forEach(item => {
    item.classList.toggle('hide');
 }) 
@@ -153,7 +154,7 @@ const slideDown = () => {
 //create menu
 const createMenu = () => {
 menu.forEach(chapter => {
-    let button = `<button class="panel">${chapter.title}</button>`;
+    let button = `<button id="${chapter.id}" class="panel">${chapter.title}</button>`;
     container.innerHTML += button 
 
     chapter.list.forEach(subject => {
@@ -165,7 +166,6 @@ menu.forEach(chapter => {
    })
  })
        let buttons = document.querySelectorAll('.panel');
-       
        buttons.forEach(button => {
        button.addEventListener('click', slideDown)
 }) 
