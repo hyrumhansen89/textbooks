@@ -146,7 +146,7 @@ let container = document.querySelector('.sidebar');
 const slideDown = () => {
    let ulList = document.querySelectorAll('.ul-item')
    ulList.forEach(item => {
-   item.classList.toggle('.hide');
+   item.classList.toggle('hide');
 }) 
 } 
 
