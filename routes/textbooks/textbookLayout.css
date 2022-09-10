@@ -15,7 +15,7 @@ width:100%;
     width:80%;
 }
 
-  .nameA1 {
+.nameA1 {
     height:45px;
     width:100%;
     background:#000000;
@@ -23,6 +23,16 @@ width:100%;
     font-size:24px;
     padding-top:15px;
     color:#FFFFFF;
+ }
+
+.nameA2 {
+    height:45px;
+    width:100%;
+    background:#FFAC1C;
+    text-align:center;
+    font-size:24px;
+    padding-top:15px;
+    color:black;
   }
 
 .panel {
