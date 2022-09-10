@@ -144,31 +144,42 @@ let container = document.querySelector('.sidebar');
 
 
 const slideDown = () => {
-   let ulList = document.querySelectorAll('.ul-item');
+   let ulList = document.querySelectorAll('.unorderedList');
 
    ulList.forEach(item => {
    item.classList.toggle('hide');
 }) 
 } 
 
-//create menu
+//CREATE MENU
 const createMenu = () => {
-menu.forEach(chapter => {
-    let button = `<button id="${chapter.id}" class="panel">${chapter.title}</button>`;
-    container.innerHTML += button 
 
-    chapter.list.forEach(subject => {
-        let ul = `<ul class="${subject.id} ul-item">`
-        let listItem = `<li class="subject">${subject.title}</li>`
-        ul += listItem
-        ul += `</ul>`
-        container.innerHTML += ul;
-   })
- })
-       let buttons = document.querySelectorAll('.panel');
-       buttons.forEach(button => {
-       button.addEventListener('click', slideDown)
-}) 
+    menu.forEach(chapter => {
+        let containerDiv = document.createElement('div')
+        let button = document.createElement('button')
+        let ul = document.createElement('ul')
+        containerDiv.setAttribute('class', 'container')
+        button.setAttribute('class', 'button')
+        button.setAttribute('id', `${chapter.id}`)
+        ul.setAttribute('class', 'unorderedList')
+        ul.setAttribute('id', `${chapter.id}`)
+        button.addEventListener('click', slideDown)
+        button.innerText = `${chapter.title}`
+
+
+        chapter.list.forEach(subject => {
+            let li = document.createElement('li')
+            li.setAttribute('class', `${subject.id} subject`)
+            li.innerText = `${subject.title}`
+            li.addEventListener('click', loadPage)
+            ul.appendChild(li)
+        })
+        
+        containerDiv.appendChild(button)
+        containerDiv.appendChild(ul)
+        sidebar.appendChild(containerDiv)
+
+        })
 }
 createMenu();
 
