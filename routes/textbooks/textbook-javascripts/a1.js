@@ -139,8 +139,8 @@ const menu = [
 ];
 
 
-//variables
-let container = document.querySelector('.sidebar');
+//VARIABLES
+let sidebar = document.querySelector('.sidebar')
 
 
 const slideDown = () => {
@@ -150,6 +150,24 @@ const slideDown = () => {
    item.classList.toggle('hide');
 }) 
 } 
+
+//LOAD EXERCISES
+    // let listItem = document.querySelector('')
+    const loadPage = () => {
+     
+        const pageName = $(this).data('page');
+        if (!pageName){
+            return;
+        }
+        
+        let content = document.querySelector('.contents')
+        location.href = `textbookactivities/${pageName}.html`
+        
+        // function() {
+        //     hideAllTabs();
+        //     showTab('exercise1');
+        // })
+    }
 
 //CREATE MENU
 const createMenu = () => {
