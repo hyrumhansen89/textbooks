@@ -1,0 +1,103 @@
+.info {
+    display:flex;
+    align-items:center;
+    max-width:80%;
+    margin:auto;
+}
+
+h1 {
+    padding:15px 0 15px 0;
+}
+
+img {
+    max-height:300px;
+    clip-path:circle(40%);
+}
+
+.paragraph {
+    padding-top:10px;
+}
+
+.one {
+    background-color:#E0E0E0;
+}
+
+li {
+    padding-left:50px;
+}
+
+.class-info {
+    width:80%;
+    margin:auto;
+    padding:15px 0 50px 0;
+}
+
+.class-title {
+    font-weight:600;
+    padding:15px 0 15px 0;
+}
+
+.explanation {
+    padding-bottom:15px;
+}
+
+.logo-text {
+    font-size:2rem;
+}
+
+.button {
+    text-decoration:none;
+    border-radius:25px;
+    padding:15px;
+    font-weight:600;
+}
+
+.button-box {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.beginning-ind {
+    background:yellow;
+    color:black;
+}
+
+.intermediate-ind {
+    background:orange;
+    color:white;
+}
+
+.advanced-ind {
+    background:red;
+    color:white;
+}
+
+.beginning-gr {
+    background:purple;
+    color:white;
+}
+
+.intermediate-gr {
+    background:blue;
+    color:white;
+}
+
+.advanced-gr {
+    background:green;
+    color:white;
+}
+
+.contact {
+    background:grey;
+    color:black;
+    text-align: center;
+    margin-left:50%;
+}
+
+.writing {
+    padding:15px 0 15px 0;
+}
+
+a {
+    margin:0 20px 0 20px;
+}
