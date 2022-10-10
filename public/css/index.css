@@ -5,17 +5,12 @@
     margin:auto;
 }
 
-@media (max-width: 800px) {
-    .info {
-        flex-direction:column;
-    }
-}
 
 h1 {
     padding:15px 0 15px 0;
 }
 
-.my-photo, my-beehive {
+.my-photo, .my-beehive {
     max-height:300px;
     clip-path:circle(40%);
 }
@@ -106,4 +101,14 @@ li {
 
 a {
     margin:0 20px 0 20px;
+}
+
+@media (max-width: 1000px) {
+    .info {
+        flex-direction:column;
+    }
+
+    .button {
+        border-radius:35px
+    }
 }
