@@ -54,6 +54,7 @@ li {
 }
 
 .button-box {
+    padding:0 0 15px 0;
     display:flex;
     justify-content: space-evenly;
 }
