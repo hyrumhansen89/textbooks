@@ -15,8 +15,8 @@ h1 {
     padding:15px 0 15px 0;
 }
 
-img {
-    max-height:300px;
+.my-photo, my-beehive {
+    max-height:100%;
     clip-path:circle(40%);
 }
 
