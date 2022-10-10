@@ -19,6 +19,10 @@ h1 {
     padding-top:10px;
 }
 
+.container {
+padding:10px 0 10px 0;
+}
+
 .one {
     background-color:#E0E0E0;
 }
