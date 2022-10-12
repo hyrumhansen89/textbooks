@@ -3,6 +3,7 @@
     align-items:center;
     max-width:80%;
     margin:auto;
+    flex-wrap:wrap;
 }
 
 
@@ -100,8 +101,9 @@ li {
     margin-left:50%;
 }
 
-.writing {
+.writing-sign-up {
     padding:15px 0 15px 0;
+    width:100%
 }
 
 a {
